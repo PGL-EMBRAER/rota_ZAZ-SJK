@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Aerospace - PGL Embraer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-plane"></i>
+                <span>PGL Brasil</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#overview" class="nav-link">Visão Geral</a>
+                <a href="#nose-door" class="nav-link">Nose Door</a>
+                <a href="#analysis" class="nav-link">Análise Tarifas</a>
+                <a href="#solution" class="nav-link">Solução ZAZ-SJK</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Análise Estratégica de Mercado</h1>
+                <h2 class="hero-subtitle">Aeronaves Nose Door & Soluções Logísticas</h2>
+                <p class="hero-description">
+                    Impacto da concentração de mercado no transporte aéreo na Rota Europa-Brasil pela Cargolux 
+                     e a proposta inovadora da rota ZAZ-SJK
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">Média de 39%</span>
+                        <span class="stat-label">Redução de Custos com a nova rota PGL</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Média de 65%</span>
+                        <span class="stat-label">Aumento Tarifário com a saída da KLM</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <div class="container">
+                <h2 class="section-title">Sumário Executivo</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Contexto de Mercado</h3>
+                        <p>Saída da KLM do mercado brasileiro em setembro de 2024, resultando em concentração monopolística na Cargolux</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Impacto Tarifário</h3>
+                        <p>Aumentos de 38,8% a 73,8% nas tarifas de frete</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3>Solução Proposta</h3>
+                        <p>Nova rota ZAZ-SJK com redução de 39% nos custos e primeiro tryout em 03/07/2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nose Door Section -->
+        <section id="nose-door" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Aeronaves Nose Door</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Conceituação e Características Técnicas</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-grid">
+                                <div class="content-text">
+                                    <p>As aeronaves nose door representam uma categoria especializada de aeronaves cargueiras com capacidade única de abertura frontal do nariz para carregamento direto de cargas volumosas.</p>
+                                    <ul>
+                                        <li><strong>Abertura frontal hidráulica</strong> - Permite acesso direto ao compartimento principal</li>
+                                        <li><strong>Capacidade OVS</strong> - Transporte de cargas oversized até 20m de comprimento</li>
+                                        <li><strong>Flexibilidade operacional</strong> - Combinação de porta lateral e frontal</li>
+                                        <li><strong>Proteção de carga</strong> - Minimiza exposição durante manuseio</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="nose_door_boeing747.jpg" alt="Boeing 747 Nose Door" class="feature-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Vantagens para Componentes Embraer</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-grid">
+                                <div class="content-text">
+                                    <p>Para a Embraer, o transporte de semiasas e revestimentos através de aeronaves nose door oferece vantagens significativas:</p>
+                                    <div class="benefits-grid">
+                                        <div class="benefit-item">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Integridade do Produto</h4>
+                                            <p>Carregamento direto sem desmontagem ou modificações estruturais</p>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-clock"></i>
+                                            <h4>Eficiência Logística</h4>
+                                            <p>Redução significativa nos tempos de carga e descarga</p>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-ruler"></i>
+                                            <h4>Dimensões Especiais</h4>
+                                            <p>Acomoda semiasas com precisão dimensional exigida</p>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-temperature-low"></i>
+                                            <h4>Proteção Ambiental</h4>
+                                            <p>Minimiza exposição a condições adversas durante transporte</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Especificações Genéricas  Boeing 747F</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="specs-grid">
+                                <div class="spec-card">
+                                    <h4>Dimensões do Compartimento</h4>
+                                    <ul>
+                                        <li>Comprimento: até 20 metros</li>
+                                        <li>Altura: até 3,2 metros</li>
+                                        <li>Largura: 6,1 metros</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-card">
+                                    <h4>Capacidade de Carga</h4>
+                                    <ul>
+                                        <li>Peso máximo: 140 toneladas</li>
+                                        <li>Volume: 858 m³</li>
+                                        <li>Pallets: até 39 posições</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-card">
+                                    <h4>Características Operacionais</h4>
+                                    <ul>
+                                        <li>Porta lateral: 3,4m x 2,6m</li>
+                                        <li>Porta frontal: abertura 110°</li>
+                                        <li>Sistema hidráulico duplo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section id="analysis" class="section">
+            <div class="container">
+                <h2 class="section-title">Análise de Tarifas</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Contexto Histórico e Mudanças Estruturais</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="timeline">
+                                <div class="">
+                                    <div class="timeline-date">Até Set/2024</div>
+                                    <div class="timeline-content">
+                                        <h4>Mercado Competitivo</h4>
+                                        <p>8 embarques semanais: 3 KLM + 5 Cargolux</p>
+                                        <p>Ambiente competitivo saudável com tarifas estáveis</p>
+                                    </div>
+                                </div>
+                                <br> </br>
+                                <div class="">
+                                    <div class="timeline-date">14 Set/2024</div>
+                                    <div class="timeline-content">
+                                        <h4>Saída da KLM</h4>
+                                        <p>Retirada estratégica do mercado brasileiro</p>
+                                        <p>Redução para 5 voos semanais (apenas Cargolux)</p>
+                                    </div>
+                                </div>
+                                <br> </br>
+                                <div class="">
+                                    
+                                    <div class="timeline-date">Out/2024</div>
+                                    <div class="timeline-content">
+                                        <h4>Concentração de Mercado</h4>
+                                        <p>Cargolux reduz frota para 3 aeronaves</p>
+                                        <p>Início dos aumentos tarifários significativos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Evolução das Tarifas por Período</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                           
+                            <div class="tariff-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Ranger AOG</th>
+                                            <th>952 up to 1268 cm</th>
+                                            <th>1269 up to 1369 cm</th>
+                                            <th>673 up to 1773 cm</th>
+                                            <th>Aumento Médio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Valores Originais</td>
+                                            <td>€8,18</td>
+                                            <td>€8,18</td>
+                                            <td>€8,18</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Outubro 2024</td>
+                                            <td>€11,30</td>
+                                            <td>€12,13</td>
+                                            <td>€11,51</td>
+                                            <td class="increase">+40,73%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nov/Dez/Jan/Fev</td>
+                                            <td>€13,32</td>
+                                            <td>€13,32</td>
+                                            <td>€13,32</td>
+                                            <td class="increase">+62,84%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Março 2025</td>
+                                            <td>€13,37</td>
+                                            <td>€13,37</td>
+                                            <td>€13,37</td>
+                                            <td class="increase">+63,47%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Abr/Mai/Jun 2025</td>
+                                            <td>€12,07</td>
+                                            <td>€12,07</td>
+                                            <td>€12,07</td>
+                                            <td class="increase">+47,56%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <!--
+                      <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Impacto Financeiro Detalhado</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        -->
+                        <div class="accordion-content">
+                            <div class="impact-grid">
+                                <div class="impact-card">
+                                    <h4>Categoria 318-634cm</h4>
+                                    <div class="impact-details">
+                                        <div class="impact-item">
+                                            <span class="label">Aumento:</span>
+                                            <span class="value increase">+80,8%</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Volume Mensal:</span>
+                                            <span class="value">80 toneladas</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Impacto Mensal:</span>
+                                            <span class="value cost">€252.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="impact-card">
+                                    <h4>Categoria 635-951cm</h4>
+                                    <div class="impact-details">
+                                        <div class="impact-item">
+                                            <span class="label">Aumento:</span>
+                                            <span class="value increase">+73,6%</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Volume Mensal:</span>
+                                            <span class="value">120 toneladas</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Impacto Mensal:</span>
+                                            <span class="value cost">€358.800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="impact-card">
+                                    <h4>Categoria 952-1268cm</h4>
+                                    <div class="impact-details">
+                                        <div class="impact-item">
+                                            <span class="label">Aumento:</span>
+                                            <span class="value increase">+80,3%</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Volume Mensal:</span>
+                                            <span class="value">100 toneladas</span>
+                                        </div>
+                                        <div class="impact-item">
+                                            <span class="label">Impacto Mensal:</span>
+                                            <span class="value cost">€314.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-impact">
+                                <h4>Impacto Total Mensal: <span class="cost-total">€924.800</span></h4>
+                                <p>Impacto Anual Projetado: <span class="cost-total">€11.097.600</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Solução Estratégica: Rota ZAZ-SJK</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Desenvolvimento da Rota Alternativa</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="route-overview">
+                                <div class="route-map">
+                                    <div class="route-point origin">
+                                        <i class="fas fa-plane-departure"></i>
+                                        <h4>ZAZ - Zaragoza</h4>
+                                        <p>Hub europeu estratégico</p>
+                                        <ul>
+                                            <li>Infraestrutura especializada</li>
+                                            <li>Equipamentos de alta capacidade</li>
+                                            <li>Localização estratégica</li>
+                                        </ul>
+                                    </div>
+                                    <div class="route-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span>39% economia</span>
+                                    </div>
+                                    <div class="route-point destination">
+                                        <i class="fas fa-plane-arrival"></i>
+                                        <h4>SJK - São José dos Campos</h4>
+                                        <p>Proximidade com Embraer</p>
+                                        <ul>
+                                            <li>Poucos km das instalações</li>
+                                            <li>Infraestrutura adequada</li>
+                                            <li>Acesso direto ao complexo para algumas peças</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Vantagens Operacionais</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="advantages-grid">
+                                <div class="advantage-card">
+                                    <div class="advantage-icon">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <h4>Agilidade de Carregamento</h4>
+                                    <ul>
+                                        <li>Equipamentos especializados em Zaragoza</li>
+                                        <li>Guindastes de alta capacidade</li>
+                                        <li>Sistemas de transporte interno otimizados</li>
+                                        <li>Agendamentos coordenados</li>
+                                        <li>Redução dos tempos de espera</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-card">
+                                    <div class="advantage-icon">
+                                        <i class="fas fa-warehouse"></i>
+                                    </div>
+                                    <h4>Armazenagem e Manuseio</h4>
+                                    <ul>
+                                        <li>Facilidades climatizadas e controladas</li>
+                                        <li>Controle de umidade e temperatura</li>
+                                        <li>Áreas específicas para componentes sensíveis</li>
+                                        <li>Equipes especializadas em aeronáutica</li>
+                                        <li>Redução de riscos de danos</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-card">
+                                    <div class="advantage-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h4>Eficiência SJK</h4>
+                                    <ul>
+                                        <li>Proximidade geográfica com Embraer</li>
+                                        <li>Infraestrutura aeronáutica especializada</li>
+                                        <li>Acesso direto ao complexo industrial Faria LIma</li>
+                                        <li>Eliminação de transbordos para diversas cargas</li>
+                                        <li>Redução de riscos no transporte terrestre</li>
+                                    </ul>
+                                </div>
+                                <div class="advantage-card">
+                                    <div class="advantage-icon">
+                                        <i class="fas fa-euro-sign"></i>
+                                    </div>
+                                    <h4>Otimização AOG</h4>
+                                    <ul>
+                                        <li>Consolidação de cargas em sua maior parte como rotina </li>
+                                        <li>Apenas uma carga classificada como AOG</li>
+                                        <li>Economia - voos regulares teriam aumento nos embarques AOG</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>Análise Econômica e Cronograma</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="economic-analysis">
+
+
+
+<!--
+
+                                <div class="cost-comparison">
+                                    <h4>Comparação de Custos</h4>
+                                    <div class="comparison-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Componente</th>
+                                                    <th>Cargolux Atual</th>
+                                                    <th>Rota ZAZ-SJK</th>
+                                                    <th>Economia</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Frete Base (€/kg)</td>
+                                                    <td>€7,05</td>
+                                                    <td>€4,30</td>
+                                                    <td class="savings">€2,75 (39%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Taxa de Screening</td>
+                                                    <td>€0,17</td>
+                                                    <td>€0,15</td>
+                                                    <td class="savings">€0,02 (12%)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Taxa de Segurança</td>
+                                                    <td>€0,20</td>
+                                                    <td>€0,18</td>
+                                                    <td class="savings">€0,02 (10%)</td>
+                                                </tr>
+                                                <tr class="total-row">
+                                                    <td><strong>Total por kg</strong></td>
+                                                    <td><strong>€7,42</strong></td>
+                                                    <td><strong>€4,63</strong></td>
+                                                    <td class="savings"><strong>€2,79 (38%)</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+-->
+
+
+
+                                <div class="savings-projection">
+                                    <h4>Projeção de Economia</h4>
+                                    <div class="savings-cards">
+                                      
+                                        <div class="savings-card">
+                                            <h5>Economia </h5>
+                                            <span class="savings-amount">39%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-implementation">
+                                    <h4>Cronograma de Implementação</h4>
+                                    <div class="implementation-steps">
+                                        <div class="step completed">
+                                            <div class="step-number">1</div>
+                                            <div class="step-content">
+                                                <h5>Desenvolvimento da Rota</h5>
+                                                <p>Concluído - Negociações e planejamento</p>
+                                            </div>
+                                        </div>
+                                        <div class="step current">
+                                            <div class="step-number">2</div>
+                                            <div class="step-content">
+                                                <h5>Primeiro Tryout</h5>
+                                                <p>03/07/2025 - Voo inaugural de teste</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">3</div>
+                                            <div class="step-content">
+                                                <h5>Avaliação e Otimização</h5>
+                                                <p>Jul-Ago/2025 - Análise de resultados</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">4</div>
+                                            <div class="step-content">
+                                                <h5>Implementação Regular</h5>
+                                                <p>Set/2025 - Operação em escala completa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Recomendações Estratégicas</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Implementação Gradual</h3>
+                        <p>Iniciar com tryout em 03/07/2025 para validação operacional e identificação de oportunidades de otimização</p>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Diversificação de Fornecedores</h3>
+                        <p>Desenvolver parcerias com múltiplos operadores usando ZAZ-SJK como âncora para negociações</p>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Monitoramento Contínuo</h3>
+                        <p>Sistema de acompanhamento de tarifas, qualidade de serviço e performance operacional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-plane"></i>
+                    <span>PGL ABrsil</span>
+                </div>
+                <div class="footer-info">
+                    <p>Relatório  PGL para Embraer S.A.</p>
+                    <p>Julho 2025 - Análise de mercado e soluções logísticas - By Reinaldo Lourenço</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
